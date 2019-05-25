@@ -1,0 +1,62 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	cout << "DISPLAY ALL TEMPERATURES" << endl;
+
+	int ProvA[7];
+	int ProvB[7];
+	int ProvC[7];
+	
+	cout << "Enter all temperature for a week of ";
+	cout << "Province A, Province B and as well as Province C" << endl;
+	cout << " " << endl;
+	
+	for (int v = 0; v < 7; v++)
+	{
+		cout << "Province A, Day " << v + 1 << ": "; cin >> ProvA[v];
+	}
+	
+	cout << " " << endl;
+	
+	for (int v = 0; v < 7; v++)
+	{
+		cout << "Province B, Day " << v+1 << ": "; cin >> ProvB[v];
+	}
+	
+	cout << " " << endl;
+	
+	for (int v = 0; v < 7; v++)
+	{
+		cout << "Province C, Day " << v+1 << ": "; cin >> ProvC[v];
+	}
+
+
+	cout << "Displaying Values" << endl;
+	cout << " " << endl;
+	
+    
+	for (int v = 0; v < 7; v++)
+	{
+		cout << "Province A, Day " << v + 1 << " = " << ProvA[v] << endl;
+	}
+	
+	cout << " " << endl;
+	
+	for (int v = 0; v < 7; v++)
+	{
+		cout << "Province B, Day " << v + 1 << " = " << ProvB[v] << endl;
+	}
+	
+	cout << " " << endl;
+	
+	for (int v = 0; v < 7; v++)
+	{
+		cout << "Province C, Day " << v + 1 << " = " << ProvC[v] << endl;
+	}
+
+	
+	return 0;
+}

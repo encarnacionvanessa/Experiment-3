@@ -1,0 +1,43 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	int elements = 10;
+	int smallest, largest;
+	double average = 0.0;
+	int num[elements];
+	
+	for(int v=0; v < elements; v++)
+	{
+		cout << "Enter value for number " << v + 1 << ": "; cin >> num[v];
+		
+		if (v == 0)
+		{
+			smallest = num[v];
+			largest = num[v];
+			average += num[v]/elements;
+		}
+		
+		else
+		{
+			if (smallest > num[v])
+			{
+				smallest = num[v];
+			}
+			
+			if (largest < num[v])
+			{
+				largest = num[v];
+			}
+			average += num[v] / elements;
+		}
+	}
+	
+	cout << "The smallest integer is: " << smallest << endl;
+	cout << "The largest integer is: " << largest << endl;
+	cout << "The average of the inetegers is: " << average << endl;
+	
+	return 0;
+}
